@@ -1,0 +1,36 @@
+.Header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .gith,
+  .Linkd {
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 0px 3px 3px 3px;
+    background: rgba(47, 242, 15, 0.17);
+    border-style: solid;
+    border-color: #2ff20f;
+  }
+  .HeaderIconsSp {
+    display: flex;
+    gap: 10px;
+  }
+  .MyMameContent {
+    width: 230px;
+    height: 30px;
+    background: rgba(47, 242, 15, 0.17);
+    border-width: 0px 3px 3px 0px;
+    border-style: solid;
+    border-color: #2ff20f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+}
