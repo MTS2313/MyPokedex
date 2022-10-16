@@ -1,31 +1,35 @@
 .ControlBox {
-  width: 80px;
-  height: 80px;
   position: fixed;
   right: 0;
   top: 50%;
   bottom: 50%;
-  background: transparent;
-  border: 2px solid #2ff20f;
-  border-right: none;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  .iconsContent {
-    display: flex;
-    flex-direction: column;
-    row-gap: 5px;
-  }
+  justify-content:center;
+  padding: 4px;
+  gap: 4px;
+  border: 1px solid #2FF20F;
   .IconsBoxSb {
     display: flex;
     gap: 5px;
+    row-gap: 5px;
+    flex-direction: column;
   }
 }
-.ControlBoxIcons{
-    cursor:pointer;
+.ControlBoxIcons {
+  cursor: pointer;
+  background: #ccf0bb;
+  border: 1px solid #2ff20f;
+  border-radius: 3px;
 }
 @media screen and (min-width: 800px) {
   .ControlBox {
-    right: 14px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ControlBox {
+    height: 100px;
   }
 }

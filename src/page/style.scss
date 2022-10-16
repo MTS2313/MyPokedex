@@ -5,17 +5,25 @@
   overflow-y:scroll;
   .PokeList {
     display: grid;
-    grid-template-columns: 260px;
-    grid-template-rows: repeat(9, 170px);
+    grid-template-columns: 300px;
     grid-row-gap: 15px;
     margin-top:15px;
   }
 }
-@media screen and (min-width:800px){
+@media screen and (min-width:800px) and (max-width:1400px){
   .Home{
     .PokeList{
       grid-gap: 15px;
-      grid-template-columns:repeat(4, 260px);
+      grid-template-columns:repeat(3,300px);
+      justify-content:center;
+    }
+  }
+}
+@media screen and (min-width:1440px){
+  .Home{
+    .PokeList{
+      grid-gap: 15px;
+      grid-template-columns:repeat(4,300px);
       justify-content:center;
     }
   }

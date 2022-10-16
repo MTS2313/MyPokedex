@@ -4,6 +4,7 @@ import { useState } from "react";
 import instance from "../assets/axios";
 import ControlBox from "../components/body_components/controlbox/ControlBox";
 import Header from "../components/body_components/header/Header";
+import Footer from "../components/footer";
 import Card from "../components/pokecard/Card";
 import "./style.scss";
 function Home() {
@@ -35,11 +36,12 @@ function Home() {
     <div className="Home" id="HomeId">
       <Header />
       <div className="PokeList">
-        {PokemonList.map((i) => {
-          return <Card PokeId={i.name} />;
+        {PokemonList.map((i,index) => {
+          return <Card PokeId={i.name} key={index}/>;
         })}
       </div>
       <ControlBox Next={NextList} Back={BackList} />
+      <Footer/>
     </div>
   );
 }

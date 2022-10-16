@@ -6,19 +6,21 @@ import {
   MdSearch,
   MdShuffle,
 } from "react-icons/md";
-function ControlBox({Next,Back,Search,Shuffle}) {
-    let icon_size = 2
+function ControlBox({ Next, Back, Search, Shuffle }) {
+  let icon_size = 2.5;
   return (
     <div className="ControlBox">
-      <div className="iconsContent">
-        <div className="PageControlIcons IconsBoxSb">
-          <MdNavigateBefore className="ControlBoxIcons" fontSize={`${icon_size}rem`} onClick={Back}/>
-          <MdNavigateNext className="ControlBoxIcons" fontSize={`${icon_size}rem`} onClick={Next}/>
-        </div>
-        <div className="ListToolsIcons IconsBoxSb">
-          <MdSearch className="ControlBoxIcons" fontSize={`${icon_size}rem`} onClick={Search}/>
-          <MdShuffle className="ControlBoxIcons" fontSize={`${icon_size}rem`} onClick={Shuffle}/>
-        </div>
+      <div className="PageControlIcons IconsBoxSb">
+        <MdNavigateNext
+          className="ControlBoxIcons"
+          fontSize={`${icon_size}rem`}
+          onClick={Next}
+        />
+        <MdNavigateBefore
+          className="ControlBoxIcons"
+          fontSize={`${icon_size}rem`}
+          onClick={Back}
+        />
       </div>
     </div>
   );

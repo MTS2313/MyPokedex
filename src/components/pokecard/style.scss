@@ -1,89 +1,54 @@
-@media screen and (max-width: 799px) {
-  .Card {
-    width: 260px;
-    height: 170px;
-    border-image-slice: 1;
-    background: #2ff20f2b;
-    border-style: solid;
-    border-width: 3px 3px 3px 0px;
-    .PokemonImage {
-      width: 50%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      img {
-        width: 130px;
-        height: 130px;
-      }
-    }
-  }
-}
 .Card {
   display: flex;
+  justify-content: center;
   align-items: center;
-  .PokemonRedInfo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-left: solid 2px #000;
-    height: 90%;
+  background: rgba(47, 242, 15, 0.17);
+  box-sizing: border-box;
+  .PokemonImg{
+    display:flex;
+    align-items:center;
+    justify-content:center;
     width: 50%;
-    row-gap: 5px;
-    p {
-      margin: 0;
-      font-size:15px;
-      text-align:center; 
+    height:50%;
+    img{
+      width:90%;
+      height:90%;
     }
-    .PokemonAtr {
-      display: flex;
-      width: 80%;
-      border: 1px solid #000;
-      .AtrValue {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 20px;
-        width: 60%;
-        background: #fff;
-        font-size: 15px;
-        p {
-          margin: 0;
-        }
-      }
-      .AtrName {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #2ff20f;
-        height: 20px;
-        width: 50%;
-        p {
-          margin: 0;
-          font-size: 15px;
-        }
-      }
+  }
+  .DivBar{
+    height:90%;
+    width:1px;
+    background:#000;
+  }
+  .InfoContent{
+    width: 50%;
+    height:95%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+    row-gap:5px;
+    *{
+      margin:0;
+    }
+    p.PokemonName{
+      font-weight:600;
     }
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 768px) {
   .Card {
-    width: 260px;
-    height: 170px;
-    border-image-slice: 1;
-    background: #2ff20f2b;
+    width: 270px;
+    height: 180px;
+    border-width: 3px 3px 3px 0px;
     border-style: solid;
-    border-width: 3px;
-    .PokemonImage {
-      width: 50%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      img {
-        width: 130px;
-        height: 130px;
-      }
-    }
+    border-color: #000000;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .Card {
+    width: 300px;
+    height: 200px;
+    border: 3px solid #000000;
   }
 }
